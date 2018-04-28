@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "newdata <- data.frame(Duration.in.month = c(24), Credit.amount = c(1000), Installment.rate.in.percentage.of.disposable.income = c(0), Status.of.existing.checking.accountA13 = c(0), Status.of.existing.checking.accountA14 = c(0), Credit.historyA32 = c(0), Credit.historyA33 = c(0), Credit.historyA34 = c(0), PurposeA41 = c(0), Savings.account.bondsA64 = c(0), Savings.account.bondsA65 = c(0), Present.employment.since.A74 = c(0), Other.debtors...guarantorsA103 = c(0), Other.installment.plansA143 = c(0), Housing.A15 = c(0), Housing.A152 = c(1))\ncredit(input = newdata)\n\npredict(model_9, newdata = newdata, type=\"response\")\n",
+    "created" : 1524875838528.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "514247576",
+    "id" : "A8864BF4",
+    "lastKnownWriteTime" : 1524875772,
+    "last_content_update" : 1524875772,
+    "path" : "D:/test.r",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
