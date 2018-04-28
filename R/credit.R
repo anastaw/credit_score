@@ -27,6 +27,6 @@ credit <- function(input){
   newdata$Housing.A152 <- as.numeric(newdata$Housing.A152)
   
   #model_9 is included with the package
-  newdata$credit <-  as.numeric(predict.glm(model_9, newdata = newdata, type="response"))
+  newdata$credit <-  as.vector(predict.glm(model_9, newdata = newdata, type="response"))
   return(newdata)
 }
