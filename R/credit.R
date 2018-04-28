@@ -24,11 +24,12 @@ credit <- function(input){
   newdata$Other.debtors...guarantorsA103 <- as.numeric(newdata$Other.debtors...guarantorsA103)
   newdata$Other.installment.plansA143  <- as.numeric(newdata$Other.installment.plansA143 )
   newdata$Housing.A15 <- as.numeric(newdata$Housing.A15)
-  newdata$Housing.A152 <- as.numeric(newdata$Housing.A152)
-  
+  #newdata$Housing.A152 <- as.numeric(newdata$Housing.A152)
+    newdata$Housing.A152 <- 12
+  newdata$credit_score <- ""
   
   #model_9 is included with the package
-  newdata$credit_score <-  as.numeric(predict(model_9, newdata = newdata, type="response"))
+  newdata$credit_score <-  predict(model_9, newdata = newdata, type="response")
   return(newdata)
   #return(credit_score)
 }
