@@ -26,7 +26,9 @@ credit <- function(input){
   newdata$Housing.A15 <- as.numeric(newdata$Housing.A15)
   newdata$Housing.A152 <- as.numeric(newdata$Housing.A152)
   
+  newdata$credit_score <- ""
+  
   #model_9 is included with the package
-  newdata$predicted_probs <-  predict(model_9, newdata = newdata, type="response")
+  newdata$credit_score <-  predict(model_9, newdata = newdata, type="response")
   return(newdata)
 }
