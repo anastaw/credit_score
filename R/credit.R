@@ -25,8 +25,8 @@ credit <- function(input){
   newdata$Other.installment.plansA143  <- as.numeric(newdata$Other.installment.plansA143 )
   newdata$Housing.A15 <- as.numeric(newdata$Housing.A15)
   #newdata$Housing.A152 <- as.numeric(newdata$Housing.A152)
-    newdata$Housing.A152 <- 12
-  newdata$credit_score <- ""
+  newdata$Housing.A152 <- as.numeric(12)
+  newdata$credit_score <- as.numeric(18)
   
   #model_9 is included with the package
   newdata$credit_score <-  predict(model_9, newdata = newdata, type="response")
