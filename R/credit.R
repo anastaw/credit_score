@@ -30,5 +30,6 @@ credit <- function(input){
   
   #model_9 is included with the package
   newdata$credit_score <-  predict(model_9, newdata = newdata, type="response")
-  return(newdata)
+  #return(newdata)
+  return("success")
 }
