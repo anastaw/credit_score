@@ -28,7 +28,7 @@ credit <- function(input){
   
   
   #model_9 is included with the package
-  credit_score <-  as.numeric(predict(model_9, newdata = newdata, type="response"))
-  #return(newdata)
-  return(credit_score)
+  newdata$credit_score <-  as.numeric(predict(model_9, newdata = newdata, type="response"))
+  return(newdata)
+  #return(credit_score)
 }
