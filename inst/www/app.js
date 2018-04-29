@@ -6,22 +6,22 @@ $(function(){
 		var data = [];
 		$("tbody tr").each(function(i){
 			data[i] = {
-				'Duration.in.month' : parseFloat($(this).find(".lengthfield").val()),
-				'Credit.amount' : parseFloat($(this).find(".amountfield").val()),
-				'Installment.rate.in.percentage.of.disposable.income': 0,
-				'Status.of.existing.checking.accountA13': 0,
-				'Status.of.existing.checking.accountA14': 0,
-				'Credit.historyA32': 0,
-				'Credit.historyA33': 0,
-				'Credit.historyA34': 0,
-				'PurposeA41': 0,
-				'Savings.account.bondsA64': 0,
-				'Savings.account.bondsA65': 0,
-				'Present.employment.since.A74': 0,
-				'Other.debtors...guarantorsA103': 0,
-				'Other.installment.plansA143': 0,
-				'Housing.A15': 0,	
-				'Housing.A152': 0
+				{{Duration.in.month}} : parseFloat($(this).find(".lengthfield").val()),
+				{{Credit.amount}} : parseFloat($(this).find(".amountfield").val()),
+				{{Installment.rate.in.percentage.of.disposable.income}}: 0,
+				{{Status.of.existing.checking.accountA13}}: 0,
+				{{Status.of.existing.checking.accountA14}}: 0,
+				{{Credit.historyA32}}: 0,
+				{{Credit.historyA33}}: 0,
+				{{Credit.historyA34}}: 0,
+				{{PurposeA41}}: 0,
+				{{Savings.account.bondsA64}}: 0,
+				{{Savings.account.bondsA65}}: 0,
+				{{Present.employment.since.A74}}: 0,
+				{{Other.debtors...guarantorsA103}}: 0,
+				{{Other.installment.plansA143}}: 0,
+				{{Housing.A15}}: 0,	
+				{{Housing.A152}}: 0
 			};
 		});
 		
