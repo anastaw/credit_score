@@ -58,7 +58,7 @@ $(function(){
 	$("#curlcode").text(
 		$("#curlcode").text().replace(
 			"https://public.opencpu.org/ocpu/github/opencpu/tvscore/R/tv/json", 
-			window.location.href.match(".*/tvscore/")[0] + "R/tv/json"
+			window.location.href.match(".*/credit/")[0] + "R/tv/json"
 		)
 	);
 
